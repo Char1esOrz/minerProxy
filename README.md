@@ -17,6 +17,10 @@ nohup ./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555 &
 ```bigquery
 killall minerProxy
 ```
+### 要运行多个代理矿池,设置不同的本地端口即可,例如
+```bigquery
+nohup ./minerProxy -pool asia2.ethermine.io:5555 -port 18888 &
+```
 ## Windows-CMD下
 
 ```bigquery
