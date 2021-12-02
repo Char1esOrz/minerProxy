@@ -2,6 +2,10 @@
 
 ![img.png](img.png)
 
+## 更新日志
+```bigquery
+2021-12-03 06:30    修复了部分矿机名显示为default的问题
+```
 ## Liunx下
 
 ```bash
