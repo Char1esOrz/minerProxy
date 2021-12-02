@@ -7,7 +7,7 @@
 ```bash
 git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy 
-./minerProxy -proxyPool eth-hk.flexpool.io:5555 -port 15555
+./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555
 ```
 
 ## Windows-CMD下
@@ -23,7 +23,7 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 ## 可以自定义矿池和本地端口 例如
 
 ```bash
--proxyPool    需要代理的矿池地址:端口 默认为eth-hk.flexpool.io:5555
+-pool    需要代理的矿池地址:端口 默认为eth-hk.flexpool.io:5555
 -port         本地端口 默认为15555
 -devFeePool   抽水目的矿池地址:端口 默认为eth-hk.flexpool.io:5555
 -ethAddr      抽水以太坊地址
