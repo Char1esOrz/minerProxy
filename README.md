@@ -42,6 +42,7 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 
 ```bigquery
 目前仅测试了ethermine和flexpool,别的矿池请自行测试,有什么问题可以提交git
+推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可
 因为目前大陆环境恶劣,该软件目前仅支持ssl传输
 如果开启抽水,抽水方式为每两小时一次
