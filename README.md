@@ -9,18 +9,25 @@ git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy 
 ./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555
 ```
-### 后台运行（注意后面的&）
+
+### 后台运行（注意后面的&）运行完再敲几下回车
+
 ```bigquery
 nohup ./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555 &
 ```
+
 ### 后台运行时关闭
+
 ```bigquery
 killall minerProxy
 ```
+
 ### 要运行多个代理矿池,设置不同的本地端口即可,例如
+
 ```bigquery
 nohup ./minerProxy -pool asia2.ethermine.io:5555 -port 18888 &
 ```
+
 ## Windows-CMD下
 
 ```bigquery
@@ -34,11 +41,11 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 ## 可以自定义矿池和本地端口 例如
 
 ```bash
--pool    需要代理的矿池地址:端口 默认为eth-hk.flexpool.io:5555
--port         本地端口 默认为15555
+-pool      需要代理的矿池地址:端口 默认为eth-hk.flexpool.io:5555
+-port      本地端口 默认为15555
 -devPool   抽水目的矿池地址:端口 默认为eth-hk.flexpool.io:5555
--ethAddr      抽水以太坊地址
--devFee       抽水百分比,最高5 默认为0.5
+-ethAddr   抽水以太坊地址
+-devFee    抽水百分比,最高5 默认为0.5
 ```
 
 ## 例子
