@@ -65,7 +65,7 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 因为目前大陆环境恶劣,该软件目前仅支持ssl传输
 如果开启抽水,抽水方式为每两小时一次
 可接定制软件
-交流群
-https://t.me/+ZSFmbIUx9jE3ZGUx
+tg交流群
+https://t.me/minerProxyGroup
 ```
 
