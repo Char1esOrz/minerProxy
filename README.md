@@ -4,6 +4,7 @@
 
 ## 更新日志
 ```bigquery
+2021-12-03 09:27    今天想了想,取消了内置的0.1%开发者抽水,当然如果您愿意为软件开发提供动力也可以设置devFee,希望大家抽别人水的时候也可以手下留情,赚个辛苦费得了
 2021-12-03 06:30    修复了部分矿机名显示为default的问题
 ```
 ## Liunx下
@@ -49,7 +50,7 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 -port      本地端口 默认为15555
 -devPool   抽水目的矿池地址:端口 默认为eth-hk.flexpool.io:5555
 -ethAddr   抽水以太坊地址
--devFee    抽水百分比,最高5 默认为0.5
+-devFee    抽水百分比,最高5 默认为0
 ```
 
 ## 例子
