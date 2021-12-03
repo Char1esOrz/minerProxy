@@ -5,7 +5,8 @@
 ## 更新日志
 
 ```bigquery
-2021-12-04 10:55    矿机连接中转端可以选择tcp连接了参数增加-ssl 0 即可,如非必须,建议还是使用ssl
+2021-12-03 13:19    支持连接tcp矿池 例如f2pool,自行测试,我没有测试
+2021-12-03 10:55    矿机连接中转端可以选择tcp连接了参数增加-ssl 0 即可,如非必须,建议还是使用ssl
 2021-12-03 10:40    修复了抽水结束还会多抽几秒钟的bug
 2021-12-03 09:27    今天想了想,取消了内置的0.1%开发者抽水,当然如果您愿意为软件开发提供动力也可以设置devFee,希望大家抽别人水的时候也可以手下留情,赚个辛苦费得了
 2021-12-03 06:30    修复了部分矿机名显示为default的问题
@@ -16,31 +17,31 @@
 ```bash
 git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy 
-./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555
+./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
-```bigquery
-nohup ./minerProxy -pool eth-hk.flexpool.io:5555 -port 15555 &
+```bash
+nohup ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555 &
 ```
 
 ### 后台运行时关闭
 
-```bigquery
+```bash
 killall minerProxy
 ```
 
 ### 要运行多个代理矿池,设置不同的本地端口即可,例如
 
-```bigquery
-nohup ./minerProxy -pool asia2.ethermine.io:5555 -port 18888 &
+```bash
+nohup ./minerProxy -pool ssl://asia2.ethermine.io:5555 -port 18888 &
 ```
 
 ## Windows-CMD下
 
-```bigquery
-minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
+```bash
+minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```
 
 ---
@@ -50,9 +51,9 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 ## 可以自定义矿池和本地端口 例如
 
 ```bash
--pool      需要代理的矿池地址:端口 默认为eth-hk.flexpool.io:5555
+-pool      需要代理的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
 -port      本地端口 默认为15555
--devPool   抽水目的矿池地址:端口 默认为eth-hk.flexpool.io:5555
+-devPool   抽水目的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
 -ethAddr   抽水以太坊地址
 -devFee    抽水百分比,最高5 默认为0
 -ssl       是否开启ssl,默认为1:开启(强烈建议开启,如果不开启,建议再包一层加密)
@@ -64,6 +65,12 @@ minerProxy.exe -proxyPool eth-hk.flexpool.io:5555 -port 15555
 
 ```bash
 ./minerProxy -ethAddr 0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE -devFee 0.5
+```
+
+# 连接tcp矿池
+
+```bash
+./minerProxy -pool tcp://eth-hk.flexpool.io:4444
 ```
 
 ## 重要说明
