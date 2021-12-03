@@ -19,7 +19,15 @@ git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy 
 ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```
-
+## 提示bash: git: command not found的先安装git
+```bash
+ubuntu下
+apt update
+apt install git
+centos下
+yum update
+yum install git
+```
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
