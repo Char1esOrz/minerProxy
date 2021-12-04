@@ -1,5 +1,5 @@
 # minerProxy
-
+# 等待更新新版本,暂时下架
 ![img.png](img.png)
 
 ## 更新日志
