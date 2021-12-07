@@ -3,6 +3,7 @@
 ## 更新日志
 
 ```bigquery
+2021-12-07 11:11    2.2.2>>>优化了内存占用,去掉了一些无效打印,可以自定义抽水机名字 -devWorkerName
 2021-12-07 09:10    2.2.1>>>修复无法指定端口的问题（测试的时候代码里面写死了）
 2021-12-07 08:56    2.2>>>稳如老狗版本,代码重构完成
 2021-12-06 14:30    2.1>>>修复一个bug
@@ -27,7 +28,9 @@ git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy 
 ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```
+
 ## 提示bash: git: command not found的先安装git
+
 ```bash
 ubuntu下
 apt update
@@ -36,6 +39,7 @@ centos下
 yum update
 yum install git
 ```
+
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
@@ -95,11 +99,11 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 目前仅测试了ethermine和flexpool,别的矿池请自行测试,有什么问题可以提交git
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可
-如果开启抽水,抽水方式为每两小时一次
 可接定制软件
 tg交流群
 https://t.me/minerProxyGroup
 ```
+
 ![img_2.png](img_2.png)
 ![img.png](img.png)
 ![img_1.png](img_1.png)
