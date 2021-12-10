@@ -1,0 +1,22 @@
+api: 0.0.0.0:18888
+token: 123456
+server:
+  - port: 15555
+    ssl: 1
+    proxypool: ssl://asis2.ethermine.org:5555
+
+  - port: 25555
+    ssl: 1
+    proxypool: ssl://asis2.ethermine.org:5555
+    devfee: 0.5
+    devpool: ssl://asis2.ethermine.org:5555
+    addr: 0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE
+    worker: devFee
+    
+  - port: 35555
+    ssl: 1
+    proxypool: ssl://eth-hk.flexpool.io:5555
+    devfee: 0.5
+    devpool: ssl://eth-hk.flexpool.io:5555
+    addr: 0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE
+    worker: devFee
