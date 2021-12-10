@@ -78,16 +78,7 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 
 # 参数说明
 
-## 可以自定义矿池和本地端口 例如
-
-```bash
--pool      需要代理的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
--port      本地端口 默认为15555
--devPool   抽水目的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
--ethAddr   抽水以太坊地址
--devFee    抽水百分比,最高5 默认为0
--ssl       是否开启ssl,默认为1:开启(强烈建议开启,如果不开启,建议再包一层加密)
-```
+![img_5.png](img_5.png)
 
 ## 例子
 
