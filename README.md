@@ -3,7 +3,7 @@
 ## 更新日志
 ![img_3.png](img_3.png)
 ```bigquery
-2021-12-11 05:56    2.4.1测试版 增加了配置文件和web前端 现在可以在网页上操作软件了
+2021-12-12 13:41    2.5测试版>>>flexpool和ethermine很稳定,目前已知hiveon好像有点问题正在排查
 2021-12-08 17:44    2.3.1版本更新内容
                     1.解决了奇怪的bug222
                     2.解决鱼池,hiveon矿池TCP粘包问题
@@ -78,7 +78,6 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 
 # 参数说明
 
-![img_5.png](img_5.png)
 
 ## 例子
 
