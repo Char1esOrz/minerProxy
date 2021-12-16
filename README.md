@@ -1,5 +1,5 @@
 # minerProxy
-
+![img.png](img.png)
 ## 更新日志
 ```bigquery
 2021-12-16 19:06    2.5.7>>>增加了两个参数
