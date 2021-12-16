@@ -46,12 +46,13 @@ git pull
 nohup ./minerProxy -pool ssl://asia2.ethermine.io:5555 -port 18888 &
 ```
 ## 提示bash: git: command not found的先安装git
-
+### ubuntu下
 ```bash
-ubuntu下
 apt update
 apt install git
-centos下
+```
+### centos下
+```bash
 yum update
 yum install git
 ```
