@@ -1,5 +1,4 @@
 # minerProxy
-![img.png](img.png)
 
 ## 更新日志
 ```bigquery
