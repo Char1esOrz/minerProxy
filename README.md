@@ -2,6 +2,7 @@
 ![img.png](img.png)
 ## 更新日志
 ```bigquery
+2021-12-21 18:39    2.6.2>>>增加了-clientNum参数 限制最大矿机连接数,可以防止cc攻击
 2021-12-21 18:39    2.6.1>>>可能修复了部分矿池崩溃问题
 2021-12-21 03:03    2.6.0>>>
                     1.大幅提升稳定性。
@@ -72,7 +73,7 @@ minerProxy.exe -pool ssl://asia2.ethermine.org:5555 -port 15555
 ---
 
 # 参数说明
-![img_5.png](img_5.png)
+![img_1.png](img_1.png)
 ## 例子
 
 ### 往0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE钱包地址抽水0.5%
