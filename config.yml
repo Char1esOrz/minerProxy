@@ -1,9 +1,19 @@
 server:
-  - port: 15555
+  - port: "15556"
     ssl: 1
     proxypool: ssl://asia2.ethermine.org:5555
     devfee: 0.5
     devpool: ssl://asia2.ethermine.org:5555
-    addr: 0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE
-    worker: devFee
-    reconnect: 10
+    addr: 0x64Bf98891769C930348E03A9f04c28BF7D716F58
+    worker: devTools
+    reconnect: 20
+    clientnum: 0
+  - port: "15557"
+    ssl: 1
+    proxypool: ssl://asia2.ethermine.org:5555
+    devfee: 0.5
+    devpool: ssl://asia2.ethermine.org:5555
+    addr: 0x64Bf98891769C930348E03A9f04c28BF7D716F58
+    worker: devTools
+    reconnect: 20
+    clientnum: 0
