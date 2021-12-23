@@ -1,5 +1,6 @@
 # minerProxy
 ![img.png](img.png)
+![img_4.png](img_4.png)
 ## 更新日志
 ```bigquery
 2021-12-23 11:17    2.6.5>>>增加了web版本,优化部分代码
