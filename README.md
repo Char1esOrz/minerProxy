@@ -98,7 +98,6 @@ minerProxy.exe -pool ssl://asia2.ethermine.org:5555 -port 15555
 ## 重要说明
 
 ```bigquery
-目前仅测试了ethermine和flexpool,别的矿池请自行测试,有什么问题可以提交git
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可
 可接定制软件
