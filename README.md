@@ -6,6 +6,7 @@
 对了
 在这里挂几个盗版狗，kuanggongzhushou/MinerProxy和nicococococ/MinerProxyLite和CharIesOrz/minerProxy
 盗版加料，已经有2个人找我说被抽了100%了
+2022-01-09 21:53    4.0.0T3>>>新增 动态修改抽水比例
 2022-01-09 18:41    4.0.0T2>>>修复了前端白屏问题
 2022-01-09 16:51    4.0.0T1>>>
                     4.0.0测试版1 代码重构 稍后更新一键安装和自启动脚本,303稳定用户可以先观望一段时间
@@ -62,10 +63,10 @@ wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0
 chmod 777 minerProxy_web
 ./minerProxy_web
 # 运行4.0.0测试版
-mkdir minerProxy400T2 && cd minerProxy400T2
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T2/minerProxy_v4.0.0T2_linux_amd64
-chmod 777 minerProxy_v4.0.0T2_linux_amd64
-./minerProxy_v4.0.0T2_linux_amd64
+mkdir minerProxy400T3 && cd minerProxy400T3
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T3/minerProxy_v4.0.0T3_linux_amd64
+chmod 777 minerProxy_v4.0.0T3_linux_amd64
+./minerProxy_v4.0.0T3_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
@@ -74,7 +75,7 @@ chmod 777 minerProxy_v4.0.0T2_linux_amd64
 # 运行3.0.3稳定版
 nohup ./minerProxy_web &
 # 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T2_linux_amd64 &
+nohup ./minerProxy_v4.0.0T3_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
