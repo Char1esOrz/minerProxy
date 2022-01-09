@@ -1,8 +1,14 @@
 # minerProxy
-![img.png](img.png)
-![img_4.png](img_4.png)
+![img_5.png](img/img_5.png)
+![img_6.png](img/img_6.png)
+[comment]: <> (![img.png]&#40;img/img.png&#41;)
+
+[comment]: <> (![img_4.png]&#40;img/img_4.png&#41;)
 ## 更新日志
 ```bigquery
+2022-01-09 16:51    4.0.0T1>>>
+                    4.0.0测试版1 代码重构 稍后更新一键安装和自启动脚本,303稳定用户可以先观望一段时间
+                    已知bug 在抽水池为e池时抽水份额会不够，正式版会修复这个问题，测试用户使用f池进行测试即可
 2021-12-27 19:16    3.0.3>>>修复了内存溢出的问题,强烈建议3.0.X和2.6.X系列用户升级
 2021-12-26 00:02    3.0.2>>>继续修复有的矿机掉线后无法连接或不断开连接的问题
                     建议3.0.X版本升级到此版本
@@ -98,7 +104,7 @@ minerProxy.exe -pool ssl://asia2.ethermine.org:5555 -port 15555
 ---
 
 # 参数说明
-![img_1.png](img_1.png)
+![img_1.png](img/img_1.png)
 ## 例子
 
 ### 往0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE钱包地址抽水0.5%
@@ -123,5 +129,5 @@ tg交流群
 https://t.me/minerProxyGroup
 ```
 
-![img_2.png](img_2.png)
+![img_2.png](img/img_2.png)
 
