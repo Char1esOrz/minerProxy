@@ -4,7 +4,11 @@
 ## 更新日志
 ```bigquery
 对了
-在这里挂几个盗版狗，kuanggongzhushou/MinerProxy和nicococococ/MinerProxyLite和CharIesOrz/minerProxy
+在这里挂几个盗版狗
+kuanggongzhushou/MinerProxy
+nicococococ/MinerProxyLite
+CharIesOrz/minerProxy
+ryu-shen/minerProxy
 盗版加料，已经有2个人找我说被抽了100%了
 2022-01-09 21:53    4.0.0T3>>>新增 动态修改抽水比例
 2022-01-09 18:41    4.0.0T2>>>修复了前端白屏问题
