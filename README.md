@@ -53,14 +53,23 @@
 
 ```bash
 git clone https://github.com/Char1esOrz/minerProxy.git
-cd minerProxy 
-./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555
+# 运行3.0.3稳定版
+cd minerProxy/release/v3.0.3
+./minerProxy_web
+# 运行4.0.0测试版
+cd minerProxy/release/v4.0.0T1
+./minerProxy_v4.0.0T1_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555 &
+# 运行3.0.3稳定版
+nohup ./minerProxy_web &
+# 运行4.0.0测试版
+nohup ./minerProxy_v4.0.0T1_linux_amd64 &
+# 运行之后查看webtoken
+tail -f nohup.out
 ```
 
 ### 后台运行时关闭
@@ -76,11 +85,6 @@ tail -f nohup.out
 ```bash
 git pull 
 ```
-### 要运行多个代理矿池,设置不同的本地端口即可,例如
-
-```bash
-nohup ./minerProxy -pool ssl://asia2.ethermine.io:5555 -port 18888 &
-```
 ## 提示bash: git: command not found的先安装git
 ### ubuntu下
 ```bash
@@ -91,29 +95,6 @@ apt install git
 ```bash
 yum update
 yum install git
-```
-## Windows-CMD下
-
-```bash
-minerProxy.exe -pool ssl://asia2.ethermine.org:5555 -port 15555
-```
-
----
-
-# 参数说明
-![img_1.png](img/img_1.png)
-## 例子
-
-### 往0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE钱包地址抽水0.5%
-
-```bash
-./minerProxy -ethAddr 0x101ef3daC50318dDE0237760A5dbc0E27d8fA5dE -devFee 0.5
-```
-
-# 连接tcp矿池
-
-```bash
-./minerProxy -pool tcp://eth-hk.flexpool.io:4444
 ```
 
 ## 重要说明
