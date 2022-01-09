@@ -56,13 +56,16 @@
 ## Liunx下
 
 ```bash
-git clone https://github.com/Char1esOrz/minerProxy.git
 # 运行3.0.3稳定版
-cd minerProxy/release/v3.0.3
+mkdir minerProxy303 && cd minerProxy303
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web
+chmod 777 minerProxy_web
 ./minerProxy_web
 # 运行4.0.0测试版
-cd minerProxy/release/v4.0.0T2
-./minerProxy_v4.0.0T1_linux_amd64
+mkdir minerProxy400T2 && cd minerProxy400T2
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T2/minerProxy_v4.0.0T2_linux_amd64
+chmod 777 minerProxy_v4.0.0T2_linux_amd64
+./minerProxy_v4.0.0T2_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
