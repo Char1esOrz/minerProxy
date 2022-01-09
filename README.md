@@ -1,9 +1,6 @@
 # minerProxy
 ![img_5.png](img/img_5.png)
 ![img_6.png](img/img_6.png)
-[comment]: <> (![img.png]&#40;img/img.png&#41;)
-
-[comment]: <> (![img_4.png]&#40;img/img_4.png&#41;)
 ## 更新日志
 ```bigquery
 2022-01-09 16:51    4.0.0T1>>>
