@@ -88,20 +88,20 @@ killall minerProxy
 ```bash
 tail -f nohup.out
 ```
-### 更新软件
+### 更新软件 （等待今晚更新一键更新脚本）
 ```bash
-git pull 
+
 ```
-## 提示bash: git: command not found的先安装git
+## 提示bash: wget: command not found的先安装wget
 ### ubuntu下
 ```bash
 apt update
-apt install git
+apt install wget
 ```
 ### centos下
 ```bash
 yum update
-yum install git
+yum install wget
 ```
 
 ## 重要说明
