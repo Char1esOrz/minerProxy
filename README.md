@@ -5,7 +5,8 @@
 ```bigquery
 对了
 在这里挂几个盗版狗，kuanggongzhushou/MinerProxy和nicococococ/MinerProxyLite和CharIesOrz/minerProxy
-盗版加料，已经有2个人找我说被抽了100%了 用盗版的好自为之
+盗版加料，已经有2个人找我说被抽了100%了
+2022-01-09 16:51    4.0.0T2>>>修复了前端白屏问题
 2022-01-09 16:51    4.0.0T1>>>
                     4.0.0测试版1 代码重构 稍后更新一键安装和自启动脚本,303稳定用户可以先观望一段时间
                     已知bug 在抽水池为e池时抽水份额会不够，正式版会修复这个问题，测试用户使用f池进行测试即可
@@ -60,7 +61,7 @@ git clone https://github.com/Char1esOrz/minerProxy.git
 cd minerProxy/release/v3.0.3
 ./minerProxy_web
 # 运行4.0.0测试版
-cd minerProxy/release/v4.0.0T1
+cd minerProxy/release/v4.0.0T2
 ./minerProxy_v4.0.0T1_linux_amd64
 ```
 
@@ -70,7 +71,7 @@ cd minerProxy/release/v4.0.0T1
 # 运行3.0.3稳定版
 nohup ./minerProxy_web &
 # 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T1_linux_amd64 &
+nohup ./minerProxy_v4.0.0T2_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
