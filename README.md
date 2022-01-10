@@ -10,6 +10,7 @@ nicococococ/MinerProxyLite
 CharIesOrz/minerProxy
 ryu-shen/minerProxy
 盗版加料，已经有2个人找我说被抽了100%了
+2022-01-09 21:53    4.0.0T4>>>修复了同一个矿池下多个钱包地址 矿工名会互相显示在对方钱包的问题
 2022-01-09 21:53    4.0.0T3>>>新增 动态修改抽水比例
 2022-01-09 18:41    4.0.0T2>>>修复了前端白屏问题
 2022-01-09 16:51    4.0.0T1>>>
@@ -67,10 +68,10 @@ wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0
 chmod 777 minerProxy_web
 ./minerProxy_web
 # 运行4.0.0测试版
-mkdir minerProxy400T3 && cd minerProxy400T3
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T3/minerProxy_v4.0.0T3_linux_amd64
-chmod 777 minerProxy_v4.0.0T3_linux_amd64
-./minerProxy_v4.0.0T3_linux_amd64
+mkdir minerProxy400T4 && cd minerProxy400T4
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T4/minerProxy_v4.0.0T4_linux_amd64
+chmod 777 minerProxy_v4.0.0T4_linux_amd64
+./minerProxy_v4.0.0T4_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
@@ -79,7 +80,7 @@ chmod 777 minerProxy_v4.0.0T3_linux_amd64
 # 运行3.0.3稳定版
 nohup ./minerProxy_web &
 # 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T3_linux_amd64 &
+nohup ./minerProxy_v4.0.0T4_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
