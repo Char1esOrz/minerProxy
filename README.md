@@ -62,9 +62,8 @@ ryu-shen/minerProxy
 
 
 
-## Liunx下
+## Liunx一键管理工具 包含安装/启动/停止/更新/删除
 
-### 一键管理工具 包含安装/启动/停止/更新/删除
 ```bash
 bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
 ```
@@ -76,6 +75,42 @@ screen -r minerProxy
 ### 退出查看运行情况 键盘键入
 ```
 ctrl + a + d
+```
+## Linux手动安装
+```bash
+# 运行3.0.3稳定版
+mkdir minerProxy303
+cd minerProxy303
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web
+chmod 777 minerProxy_web
+./minerProxy_web
+# 运行4.0.0测试版
+mkdir minerProxy
+cd minerProxy
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64
+chmod 777 minerProxy_v4.0.0T6_linux_amd64
+./minerProxy_v4.0.0T6_linux_amd64
+```
+
+### 后台运行（注意后面的&）运行完再敲几下回车
+
+```bash
+# 运行3.0.3稳定版
+nohup ./minerProxy_web &
+# 运行4.0.0测试版
+nohup ./minerProxy_v4.0.0T6_linux_amd64 &
+# 运行之后查看webtoken
+tail -f nohup.out
+```
+
+### 后台运行时关闭
+
+```bash
+killall minerProxy
+```
+### 后台运行时查看
+```bash
+tail -f nohup.out
 ```
 ## 重要说明
 
