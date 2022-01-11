@@ -5,7 +5,7 @@
 ```bigquery
 对了
 在这里挂几个盗版狗
-kuanggongzhushou/MinerProxy
+MinerPr0xy/MinerProxy  (不是老矿工那个)
 nicococococ/MinerProxyLite
 CharIesOrz/minerProxy
 ryu-shen/minerProxy
