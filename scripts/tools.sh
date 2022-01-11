@@ -23,8 +23,8 @@ install() {
     mkdir /root/miner_proxy
 
     echo "请选择测试版还是稳定版"
-    echo "  1、稳定版"
-    echo "  2、测试版"
+    echo "  1、v3稳定版"
+    echo "  2、v4测试版"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
