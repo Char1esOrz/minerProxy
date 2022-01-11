@@ -68,64 +68,20 @@ ryu-shen/minerProxy
 ```bash
 bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
 ```
-### 手动安装
-```bash
-# 运行3.0.3稳定版
-mkdir minerProxy303
-cd minerProxy303
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web
-chmod 777 minerProxy_web
-./minerProxy_web
-# 运行4.0.0测试版
-mkdir minerProxy
-cd minerProxy
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64
-chmod 777 minerProxy_v4.0.0T6_linux_amd64
-./minerProxy_v4.0.0T6_linux_amd64
-```
 
-### 后台运行（注意后面的&）运行完再敲几下回车
-
+### 查看运行情况
 ```bash
-# 运行3.0.3稳定版
-nohup ./minerProxy_web &
-# 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T6_linux_amd64 &
-# 运行之后查看webtoken
-tail -f nohup.out
+screen -r minerProxy
 ```
-
-### 后台运行时关闭
-
-```bash
-killall minerProxy
+### 退出查看运行情况 键盘键入
 ```
-### 后台运行时查看
-```bash
-tail -f nohup.out
+ctrl + a + d
 ```
-### 更新软件 （等待今晚更新一键更新脚本）
-```bash
-
-```
-## 提示bash: wget: command not found的先安装wget
-### ubuntu下
-```bash
-apt update
-apt install wget
-```
-### centos下
-```bash
-yum update
-yum install wget
-```
-
 ## 重要说明
 
 ```bigquery
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
-该软件系统占用极小,开最便宜的云服务器即可
-可接定制软件
+该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
 tg交流群
 https://t.me/minerProxyGroup
 ```
