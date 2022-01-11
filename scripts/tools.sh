@@ -31,7 +31,7 @@ install() {
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T5/minerProxy_v4.0.0T5_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -43,6 +43,7 @@ install() {
     chmod 777 /root/miner_proxy/run.sh
     echo "安装成功"
     echo "正在启动..."
+    ulimit -n 102400
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -82,7 +83,7 @@ update() {
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T5/minerProxy_v4.0.0T5_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -100,7 +101,7 @@ update() {
             echo "删除配置文件成功"
         fi
     fi
-
+    ulimit -n 102400
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -118,7 +119,7 @@ start() {
     if screen -list | grep -q "minerProxy"; then
         echo -e "minerProxy已启动,请勿重复启动" && exit 1
     fi
-
+    ulimit -n 102400
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -134,7 +135,7 @@ restart() {
     if screen -list | grep -q "minerProxy"; then
         screen -X -S minerProxy quit
     fi
-
+    ulimit -n 102400
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -160,6 +161,7 @@ echo "  3、更  新"
 echo "  4、启  动"
 echo "  5、重  启"
 echo "  6、停  止"
+echo "  7、配置开机启动"
 echo "======================================================="
 read -p "$(echo -e "请选择[1-6]：")" choose
 case $choose in
