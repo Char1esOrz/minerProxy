@@ -64,7 +64,7 @@ ryu-shen/minerProxy
 
 ## Liunx下
 
-### 一键管理工具（还在测试阶段）
+### 一键管理工具 包含安装/启动/停止/更新/删除
 ```bash
 bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
 ```
