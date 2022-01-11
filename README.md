@@ -59,8 +59,15 @@ ryu-shen/minerProxy
 2.5.5以上版本可以查看抽水的份额了(ps:当代理矿池和抽水矿池不一样时需要根据矿池算力自己算一下百分比)
 ```
 
+
+
 ## Liunx下
 
+### 一键管理工具（还在测试阶段）
+```bash
+bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
+```
+### 手动安装
 ```bash
 # 运行3.0.3稳定版
 mkdir minerProxy303
