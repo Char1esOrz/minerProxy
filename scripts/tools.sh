@@ -31,7 +31,7 @@ install() {
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -83,7 +83,7 @@ update() {
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
