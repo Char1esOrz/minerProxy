@@ -66,7 +66,10 @@ ryu-shen/minerProxy
 ## Liunx一键管理工具 包含安装/启动/停止/更新/删除
 
 ```bash
+# 可直连github的服务器
 bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
+# 大陆服务器
+bash <(curl -s -L https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/scripts/tools_cdn.sh)
 ```
 
 ### 查看运行情况
