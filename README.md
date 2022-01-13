@@ -88,9 +88,9 @@ chmod 777 minerProxy_web
 # 运行4.0.0测试版
 mkdir minerProxy
 cd minerProxy
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T6/minerProxy_v4.0.0T6_linux_amd64
-chmod 777 minerProxy_v4.0.0T6_linux_amd64
-./minerProxy_v4.0.0T6_linux_amd64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64
+chmod 777 minerProxy_v4.0.0T7_linux_amd64
+./minerProxy_v4.0.0T7_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
@@ -99,7 +99,7 @@ chmod 777 minerProxy_v4.0.0T6_linux_amd64
 # 运行3.0.3稳定版
 nohup ./minerProxy_web &
 # 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T6_linux_amd64 &
+nohup ./minerProxy_v4.0.0T7_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
