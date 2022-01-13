@@ -68,7 +68,7 @@ ryu-shen/minerProxy
 ```bash
 # 可直连github的服务器
 bash <(curl -s -L https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/tools.sh)
-# 大陆服务器
+# 无法访问github的大陆服务器
 bash <(curl -s -L https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/scripts/tools_cdn.sh)
 ```
 
