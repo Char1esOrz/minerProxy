@@ -31,7 +31,7 @@ install() {
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -74,16 +74,16 @@ update() {
         screen -X -S minerProxy quit
     fi
     rm -rf /root/miner_proxy/minerProxy
-    echo "请选择测试版还是稳定版"
-    echo "  1、稳定版"
-    echo "  2、测试版"
+    echo "请选择V3.0.3版本还是V4.0.0版本"
+    echo "  1、V3.0.3"
+    echo "  2、V4.0.0"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"

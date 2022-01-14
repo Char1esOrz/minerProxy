@@ -10,6 +10,7 @@ nicococococ/MinerProxyLite
 CharIesOrz/minerProxy
 ryu-shen/minerProxy
 盗版加料，已经有2个人找我说被抽了100%了
+2022-01-14 20:10    4.0.0T8>>>修复了ETH专业矿机矿机名显示不正确的问题;修复了小部分人软件崩溃的问题
 2022-01-11 04:31    4.0.0T7>>>新增ETH专业矿机支持,币种选择eth_stratum
 2022-01-11 21:31    4.0.0T6>>>修复了矿机名重复情况下web端显示错误问题,增加了首页 矿池设置页面自动刷新功能
 2022-01-11 01:00    4.0.0T5>>>修复了web端在线矿机会显示为离线矿机的显示问题
@@ -91,9 +92,9 @@ chmod 777 minerProxy_web
 # 运行4.0.0测试版
 mkdir minerProxy
 cd minerProxy
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T7/minerProxy_v4.0.0T7_linux_amd64
-chmod 777 minerProxy_v4.0.0T7_linux_amd64
-./minerProxy_v4.0.0T7_linux_amd64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64
+chmod 777 minerProxy_v4.0.0T8_linux_amd64
+./minerProxy_v4.0.0T8_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
@@ -102,7 +103,7 @@ chmod 777 minerProxy_v4.0.0T7_linux_amd64
 # 运行3.0.3稳定版
 nohup ./minerProxy_web &
 # 运行4.0.0测试版
-nohup ./minerProxy_v4.0.0T7_linux_amd64 &
+nohup ./minerProxy_v4.0.0T8_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
