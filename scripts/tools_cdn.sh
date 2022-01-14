@@ -22,9 +22,9 @@ install() {
     $cmd install curl wget screen -y
     mkdir /root/miner_proxy
 
-    echo "请选择测试版还是稳定版"
-    echo "  1、v3稳定版"
-    echo "  2、v4测试版"
+    echo "请选择V3.0.3版本还是V4.0.0版本"
+    echo "  1、V3.0.3"
+    echo "  2、V4.0.0T8"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
