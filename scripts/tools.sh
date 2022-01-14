@@ -55,7 +55,7 @@ install() {
     sleep 1s
     cat /root/miner_proxy/config.yml
     echo "请记录您的token和端口 并打开 http://服务器ip:端口 访问web服务进行配置"
-    echo "已启动web后台 您可运行 screen -r minerProxy 查看程序輸出"
+    echo "已启动web后台 您可运行 screen -r minerProxy 查看程序输出"
 }
 
 uninstall() {
@@ -115,7 +115,7 @@ update() {
     sleep 1s
     cat /root/miner_proxy/config.yml
     echo "请记录您的token和端口 并打开 http://服务器ip:端口 访问web服务进行配置"
-    echo "您可运行 screen -r minerProxy 查看程序輸出"
+    echo "您可运行 screen -r minerProxy 查看程序输出"
 }
 
 start() {
@@ -130,7 +130,7 @@ start() {
     screen -r minerProxy -p 0 -X stuff $'\n'
 
     echo "minerProxy已启动"
-    echo "您可以使用指令screen -r minerProxy查看程序輸出"
+    echo "您可以使用指令screen -r minerProxy查看程序输出"
 }
 
 restart() {
@@ -145,7 +145,7 @@ restart() {
     screen -r minerProxy -p 0 -X stuff $'\n'
 
     echo "minerProxy 重新启动成功"
-    echo "您可运行 screen -r minerProxy 查看程序輸出"
+    echo "您可运行 screen -r minerProxy 查看程序输出"
 }
 
 stop() {
