@@ -123,8 +123,7 @@ tail -f nohup.out
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
 ```
-###<a href="https://t.me/minerProxyGroup">tg 交流群</a></br>
-###<a href="https://qm.qq.com/cgi-bin/qm/qr?k=e0Vr0j34bix_1F6ZM15cOomnz3xNamlM&jump_from=webapi">QQ交流群457429236 (゜-゜)つロ 干杯</a>
-###二维码
-![img_2.png](img/img_2.png)
+<a href="https://t.me/minerProxyGroup">tg 交流群</a></br>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=e0Vr0j34bix_1F6ZM15cOomnz3xNamlM&jump_from=webapi">QQ交流群457429236 (゜-゜)つロ 干杯</a>
+
 
