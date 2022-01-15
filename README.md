@@ -62,7 +62,7 @@ ryu-shen/minerProxy
 2.5.5以上版本可以查看抽水的份额了(ps:当代理矿池和抽水矿池不一样时需要根据矿池算力自己算一下百分比)
 ```
 
-
+## Windows 直接下载运行 <a href="https://github.com/Char1esOrz/minerProxy/releases">Release</a></br>
 
 ## Liunx一键管理工具 包含安装/启动/停止/更新/删除
 
@@ -122,9 +122,9 @@ tail -f nohup.out
 ```bigquery
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
-tg交流群
-https://t.me/minerProxyGroup
 ```
-
+###<a href="https://t.me/minerProxyGroup">tg 交流群</a></br>
+###<a href="https://qm.qq.com/cgi-bin/qm/qr?k=e0Vr0j34bix_1F6ZM15cOomnz3xNamlM&jump_from=webapi">QQ交流群457429236 (゜-゜)つロ 干杯</a>
+###二维码
 ![img_2.png](img/img_2.png)
 
