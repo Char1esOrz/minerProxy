@@ -124,6 +124,6 @@ tail -f nohup.out
 该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
 ```
 <a href="https://t.me/minerProxyGroup">tg 交流群</a></br>
-<a href="https://qm.qq.com/cgi-bin/qm/qr?k=e0Vr0j34bix_1F6ZM15cOomnz3xNamlM&jump_from=webapi">QQ交流群457429236 (゜-゜)つロ 干杯</a></br>
+<a href="https://qm.qq.com/cgi-bin/qm/qr?k=e0Vr0j34bix_1F6ZM15cOomnz3xNamlM&jump_from=webapi">QQ交流群 (゜-゜)つロ 干杯</a></br>
 <img src="https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/img/img_2.png" width="250"></img>
 
