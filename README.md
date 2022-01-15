@@ -64,6 +64,8 @@ ryu-shen/minerProxy
 
 ## Windows 直接下载运行 <a href="https://github.com/Char1esOrz/minerProxy/releases">Release</a></br>
 
+---
+
 ## Liunx一键管理工具 包含安装/启动/停止/更新/删除
 
 ```bash
@@ -81,6 +83,8 @@ screen -r minerProxy
 ```
 ctrl + a + d
 ```
+
+---
 ## Linux手动安装
 ```bash
 # 运行3.0.3稳定版
@@ -120,6 +124,11 @@ tail -f nohup.out
 ## 重要说明
 
 ```bigquery
+开发者费用
+v4版本为0.3%的开发者费用
+v3版本为阶梯开发者费用 你抽水大于0%小于等于5%开发者费用为0.5% 大于5%小于等于10%开发者费用为1% 大于10%小于等于20%为2%开发者费用 大于20%开发者费用等于你的抽水百分比
+所有版本如果您是自用不开启抽水,则没有开发者费用
+
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
 ```
