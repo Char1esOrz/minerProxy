@@ -9,6 +9,7 @@ MinerPr0xy/MinerProxy  (不是老矿工那个)
 nicococococ/MinerProxyLite
 CharIesOrz/minerProxy
 ryu-shen/minerProxy
+minerproxyeth/minerproxy 这个人总改名字
 盗版加料，已经有2个人找我说被抽了100%了
 2022-01-14 20:10    4.0.0T8>>>修复了ETH专业矿机矿机名显示不正确的问题;修复了小部分人软件崩溃的问题
 2022-01-11 04:31    4.0.0T7>>>新增ETH专业矿机支持,币种选择eth_stratum
