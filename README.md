@@ -90,13 +90,6 @@ ctrl + a + d
 ---
 ## Linux手动安装
 ```bash
-# 运行3.0.3稳定版
-mkdir minerProxy303
-cd minerProxy303
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v3.0.3/minerProxy_web
-chmod 777 minerProxy_web
-./minerProxy_web
-# 运行4.0.0测试版
 mkdir minerProxy
 cd minerProxy
 wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64
@@ -107,9 +100,6 @@ chmod 777 minerProxy_v4.0.0T9_linux_amd64
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-# 运行3.0.3稳定版
-nohup ./minerProxy_web &
-# 运行4.0.0测试版
 nohup ./minerProxy_v4.0.0T9_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
@@ -128,9 +118,8 @@ tail -f nohup.out
 
 ```bigquery
 开发者费用
-v4版本为0.3%的开发者费用
-v3版本为阶梯开发者费用 你抽水大于0%小于等于5%开发者费用为0.5% 大于5%小于等于10%开发者费用为1% 大于10%小于等于20%为2%开发者费用 大于20%开发者费用等于你的抽水百分比
-所有版本如果您是自用不开启抽水,则没有开发者费用
+本软件如果您开启了抽水则为0.3%的开发者费用,如果您不开启抽水,则没有开发者费用,可以自行抓包查看
+
 
 推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
 该软件系统占用极小,开最便宜的云服务器即可（不要使用轻量服务器,轻量网络极差）
