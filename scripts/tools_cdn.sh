@@ -24,7 +24,7 @@ install() {
 
     echo "请选择V3.0.3版本还是V4.0.0版本"
     echo "  1、V3.0.3"
-    echo "  2、V4.0.0T8"
+    echo "  2、V4.0.0T9"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
@@ -33,7 +33,7 @@ install() {
         ;;
     2)
 #        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -87,7 +87,7 @@ update() {
         ;;
     2)
 #        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
