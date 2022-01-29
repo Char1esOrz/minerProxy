@@ -7,9 +7,10 @@
 在这里挂几个盗版狗
 MinerPr0xy/MinerProxy  (不是老矿工那个)
 nicococococ/MinerProxyLite
-CharIesOrz/minerProxy
+CharIesOrz/minerProxy   把我的名字1变成大写的i了
 ryu-shen/minerProxy
 minerproxyeth/minerproxy 这个人总改名字
+Char1es0rz/minerProxy 把我的名字中的O变成0了
 盗版加料，已经有2个人找我说被抽了100%了
 2022-01-29 20:39    4.0.0T9>>>修复被CC攻击软件崩溃
 2022-01-14 20:10    4.0.0T8>>>修复了ETH专业矿机矿机名显示不正确的问题;修复了小部分人软件崩溃的问题
