@@ -22,12 +22,23 @@ install() {
     $cmd install curl wget screen -y
     mkdir /root/miner_proxy
 
-#        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
-    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
-
+    echo "请选择v4版本还是v5测试版 (V5测试版千万不要在生产环境使用,肯定还有bug)"
+    echo "  1、v4.0.0T9"
+    echo "  2、v5.0.0_alpha"
+    read -p "$(echo -e "请输入[1-2]：")" choose
+    case $choose in
+    1)
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
+        ;;
+    2)
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.0_alpha/minerProxy_v5.0.0_alpha_linux_amd64 -O /root/miner_proxy/minerProxy
+        ;;
+    *)
+        echo "请输入正确的数字"
+        ;;
+    esac
     chmod 777 /root/miner_proxy/minerProxy
 
-#    wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/scripts/run.sh -O /root/miner_proxy/run.sh
     wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/scripts/run.sh -O /root/miner_proxy/run.sh
     chmod 777 /root/miner_proxy/run.sh
     echo "如果没有报错则安装成功"
@@ -40,8 +51,8 @@ install() {
     screen -r minerProxy -p 0 -X stuff $'\n'
     sleep 1s
     cat /root/miner_proxy/config.yml
-    echo "请记录您的token和端口 并打开 http://服务器ip:端口 访问web服务进行配置"
-    echo "已启动web后台 您可运行 screen -r minerProxy 查看程序輸出"
+    echo "请打开 http://服务器ip:端口 访问web服务进行配置:v4版本默认端口号为18888,v5版本默认端口号为27777 v4版本请记录您的token,v5版本默认账号密码为admin,请尽快登陆并修改账号密码"
+    echo "已启动web后台 您可运行 screen -r minerProxy 查看程序输出"
 }
 
 uninstall() {
@@ -62,21 +73,33 @@ update() {
         screen -X -S minerProxy quit
     fi
     rm -rf /root/miner_proxy/minerProxy
-
-#        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T8/minerProxy_v4.0.0T8_linux_amd64 -O /root/miner_proxy/minerProxy
-    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
+    echo "请选择v4版本还是v5测试版 (V5测试版千万不要在生产环境使用,肯定还有bug)"
+    echo "  1、v4.0.0T9"
+    echo "  2、v5.0.0_alpha"
+    read -p "$(echo -e "请输入[1-2]：")" choose
+    case $choose in
+    1)
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
+        ;;
+    2)
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.0_alpha/minerProxy_v5.0.0_alpha_linux_amd64 -O /root/miner_proxy/minerProxy
+        ;;
+    *)
+        echo "请输入正确的数字"
+        ;;
+    esac
     chmod 777 /root/miner_proxy/minerProxy
 
-    echo "v3和v4版本配置文件不通用,如果您为v3.0.3升级为v4,请删除配置文件"
-    read -p "是否删除配置文件[yes/no]：" flag
-    if [ -z $flag ]; then
-        echo "输入错误" && exit 1
-    else
-        if [ "$flag" = "yes" -o "$flag" = "ye" -o "$flag" = "y" ]; then
-            rm -rf /root/miner_proxy/config.yml
-            echo "删除配置文件成功"
-        fi
-    fi
+#    echo "v3和v4版本配置文件不通用,如果您为v3升级为v4或v4回退至v3,请删除配置文件"
+#    read -p "是否删除配置文件[yes/no]：" flag
+#    if [ -z $flag ]; then
+#        echo "输入错误" && exit 1
+#    else
+#        if [ "$flag" = "yes" -o "$flag" = "ye" -o "$flag" = "y" ]; then
+#            rm -rf /root/miner_proxy/config.yml
+#            echo "删除配置文件成功"
+#        fi
+#    fi
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -86,8 +109,8 @@ update() {
 
     sleep 1s
     cat /root/miner_proxy/config.yml
-    echo "请记录您的token和端口 并打开 http://服务器ip:端口 访问web服务进行配置"
-    echo "您可运行 screen -r minerProxy 查看程序輸出"
+    echo "请打开 http://服务器ip:端口 访问web服务进行配置:v4版本默认端口号为18888,v5版本默认端口号为27777 v4版本请记录您的token,v5版本默认账号密码为admin,请尽快登陆并修改账号密码"
+    echo "您可运行 screen -r minerProxy 查看程序输出"
 }
 
 start() {
@@ -102,7 +125,7 @@ start() {
     screen -r minerProxy -p 0 -X stuff $'\n'
 
     echo "minerProxy已启动"
-    echo "您可以使用指令screen -r minerProxy查看程序輸出"
+    echo "您可以使用指令screen -r minerProxy查看程序输出"
 }
 
 restart() {
@@ -117,7 +140,7 @@ restart() {
     screen -r minerProxy -p 0 -X stuff $'\n'
 
     echo "minerProxy 重新启动成功"
-    echo "您可运行 screen -r minerProxy 查看程序輸出"
+    echo "您可运行 screen -r minerProxy 查看程序输出"
 }
 
 stop() {
