@@ -24,14 +24,14 @@ install() {
 
     echo "请选择v4版本还是v5测试版 (V5测试版千万不要在生产环境使用,肯定还有bug)"
     echo "  1、v4.0.0T9"
-    echo "  2、v5.0.0_beta"
+    echo "  2、v5.0.1_beta"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
         wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.0_beta/minerProxy_v5.0.0_beta_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.1_beta/minerProxy_v5.0.1_beta_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -75,14 +75,14 @@ update() {
     rm -rf /root/miner_proxy/minerProxy
     echo "请选择v4版本还是v5测试版 (V5测试版千万不要在生产环境使用,肯定还有bug)"
     echo "  1、v4.0.0T9"
-    echo "  2、v5.0.0_beta"
+    echo "  2、v5.0.1_beta"
     read -p "$(echo -e "请输入[1-2]：")" choose
     case $choose in
     1)
         wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.0_beta/minerProxy_v5.0.0_beta_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.0.1_beta/minerProxy_v5.0.1_beta_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
