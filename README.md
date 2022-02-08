@@ -12,6 +12,9 @@ ryu-shen/minerProxy
 minerproxyeth/minerproxy 这个人总改名字
 Char1es0rz/minerProxy 把我的名字中的O变成0了
 盗版加料，已经有2个人找我说被抽了100%了
+2022-02-08 23:32    5.0.2_beta>>>
+                    1.优化了专业矿机,测试了A10和茉莉矿机
+                    2.修复了专业矿机连接poolin,binance矿池可能登陆失败的问题
 2022-02-05 01:16    5.0.1_beta>>>
                     1.自动清理离线1小时矿机和一周之前的log(1小时清理一次)
                     2.修复币印矿池矿机名后缀多了个eth1.0
