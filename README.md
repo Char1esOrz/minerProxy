@@ -1,6 +1,5 @@
 # minerProxy
-![img_5.png](img/img_5.png)
-![img_6.png](img/img_6.png)
+![img_7.png](img/img_7.png)
 ## 更新日志
 ```bigquery
 对了
