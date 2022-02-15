@@ -54,8 +54,8 @@ install() {
     screen -r minerProxy -p 0 -X stuff "./run.sh"
     screen -r minerProxy -p 0 -X stuff $'\n'
     sleep 1s
-    cat /root/miner_proxy/config.yml
-    echo "<<<如果成功了,这是您的端口号 请打开 http://服务器ip:端口 访问web服务进行配置:v4版本默认端口号为18888,v5版本默认端口号为27777 v4版本请记录您的token,v5版本默认账号密码为admin,请尽快登陆并修改账号密码"
+    cat /root/miner_proxy/configV6.yml
+    echo "请输入 cat /root/miner_proxy/configV6.yml 查看您的端口号与账号密码"
     echo "已启动web后台 您可运行 screen -r minerProxy 查看程序输出"
 }
 
@@ -116,8 +116,8 @@ update() {
     screen -r minerProxy -p 0 -X stuff $'\n'
 
     sleep 1s
-    cat /root/miner_proxy/config.yml
-    echo "<<<如果成功了,这是您的端口号 请打开 http://服务器ip:端口 访问web服务进行配置:v4版本默认端口号为18888,v5版本默认端口号为27777 v4版本请记录您的token,v5版本默认账号密码为admin,请尽快登陆并修改账号密码"
+    cat /root/miner_proxy/configV6.yml
+    echo "请输入 cat /root/miner_proxy/configV6.yml 查看您的端口号与账号密码"
     echo "您可运行 screen -r minerProxy 查看程序输出"
 }
 
