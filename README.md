@@ -17,6 +17,7 @@ Char1es0rz/minerProxy 把我的名字中的O变成0了
                     2.专业矿机完美支持
                     3.暂时删除纯转发,明天白天增加上去
                     5.增加显示单个矿机当前算力、24小时算力、延迟份额、拒绝份额
+                    6.编译了arm64架构的linux版本
 2022-02-08 23:32    5.0.2_beta>>>
                     1.优化了专业矿机,测试了A10和茉莉矿机
                     2.修复了专业矿机连接poolin,binance矿池可能登陆失败的问题
@@ -109,15 +110,20 @@ ctrl + a + d
 ```bash
 mkdir minerProxy
 cd minerProxy
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64
-chmod 777 minerProxy_v4.0.0T9_linux_amd64
-./minerProxy_v4.0.0T9_linux_amd64
+
+# x86服务器
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.1.0/minerProxy_v5.1.0_linux_amd64
+# arm服务器
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.1.0/minerProxy_v5.1.0_linux_arm64
+
+chmod 777 minerProxy_v5.1.0_linux_amd64
+./minerProxy_v5.1.0_linux_amd64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy_v4.0.0T9_linux_amd64 &
+nohup ./minerProxy_v5.1.0_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
