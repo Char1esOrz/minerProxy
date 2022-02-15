@@ -108,16 +108,19 @@ ctrl + a + d
 ---
 ## Linux手动安装
 ```bash
-mkdir minerProxy
-cd minerProxy
+mkdir miner_proxy
+cd miner_proxy
 
 # x86服务器
 wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.1.0/minerProxy_v5.1.0_linux_amd64
-# arm服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.1.0/minerProxy_v5.1.0_linux_arm64
-
 chmod 777 minerProxy_v5.1.0_linux_amd64
 ./minerProxy_v5.1.0_linux_amd64
+
+
+# arm服务器
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.1.0/minerProxy_v5.1.0_linux_arm64
+chmod 777 minerProxy_v5.1.0_linux_arm64
+./minerProxy_v5.1.0_linux_arm64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
