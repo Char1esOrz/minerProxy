@@ -24,18 +24,18 @@ install() {
 
     echo "请选择v4还是v5版本"
     echo "  1、v4.0.0T9"
-    echo "  2、v5.2.0_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
-    echo "  3、v5.2.0_arm64(arm架构服务器选择)"
+    echo "  2、v5.2.1_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
+    echo "  3、v5.2.1_arm64(arm架构服务器选择)"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_arm64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_arm64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
@@ -79,18 +79,18 @@ update() {
     rm -rf /root/miner_proxy/minerProxy
     echo "请选择v4还是v5版本"
     echo "  1、v4.0.0T9"
-    echo "  2、v5.2.0_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
-    echo "  3、v5.2.0_arm64(arm架构服务器选择)"
+    echo "  2、v5.2.1_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
+    echo "  3、v5.2.1_arm64(arm架构服务器选择)"
     read -p "$(echo -e "请输入[1-3]：")" choose
     case $choose in
     1)
         wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     2)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_amd64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_amd64 -O /root/miner_proxy/minerProxy
         ;;
     3)
-        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_arm64 -O /root/miner_proxy/minerProxy
+        wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_arm64 -O /root/miner_proxy/minerProxy
         ;;
     *)
         echo "请输入正确的数字"
