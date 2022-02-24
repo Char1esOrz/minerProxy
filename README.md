@@ -119,21 +119,21 @@ mkdir miner_proxy
 cd miner_proxy
 
 # x86服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_amd64
-chmod 777 minerProxy_v5.2.0_linux_amd64
-./minerProxy_v5.1.0_linux_amd64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_amd64
+chmod 777 minerProxy_v5.2.1_linux_amd64
+./minerProxy_v5.2.1_linux_amd64
 
 
 # arm服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.0/minerProxy_v5.2.0_linux_arm64
-chmod 777 minerProxy_v5.2.0_linux_arm64
-./minerProxy_v5.2.0_linux_arm64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.2.1/minerProxy_v5.2.1_linux_arm64
+chmod 777 minerProxy_v5.2.1_linux_arm64
+./minerProxy_v5.2.1_linux_arm64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy_v5.2.0_linux_amd64 &
+nohup ./minerProxy_v5.2.1_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
