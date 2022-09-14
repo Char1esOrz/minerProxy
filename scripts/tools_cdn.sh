@@ -22,25 +22,8 @@ install() {
     $cmd install curl wget screen -y
     mkdir /root/miner_proxy
 
-    echo "请选择v4还是v5版本"
-    echo "  1、v4.0.0T9"
-    echo "  2、v5.3.0_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
-    echo "  3、v5.3.0_arm64(arm架构服务器选择)"
-    read -p "$(echo -e "请输入[1-3]：")" choose
-    case $choose in
-    1)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
-        ;;
-    2)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.3.0/minerProxy_v5.3.0_linux_amd64 -O /root/miner_proxy/minerProxy
-        ;;
-    3)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.3.0/minerProxy_v5.3.0_linux_arm64 -O /root/miner_proxy/minerProxy
-        ;;
-    *)
-        echo "请输入正确的数字"
-        ;;
-    esac
+    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.0/minerProxy_v6.0.0_linux_arm64 -O /root/miner_proxy/minerProxy
+
     chmod 777 /root/miner_proxy/minerProxy
 
     wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/scripts/run.sh -O /root/miner_proxy/run.sh
@@ -53,9 +36,10 @@ install() {
     screen -r minerProxy -p 0 -X stuff $'\n'
     screen -r minerProxy -p 0 -X stuff "./run.sh"
     screen -r minerProxy -p 0 -X stuff $'\n'
-    sleep 1s
-    cat /root/miner_proxy/configV6.yml
-    echo "请输入 cat /root/miner_proxy/configV6.yml 查看您的端口号与账号密码"
+    sleep 3s
+    cat /root/miner_proxy/password.txt
+    echo "请输入 cat /root/miner_proxy/password.txt 账号密码"
+    echo "输入 cat /root/miner_proxy/后台地址.txt 查看后台地址和端口"
     echo "已启动web后台 您可运行 screen -r minerProxy 查看程序输出"
 }
 
@@ -77,37 +61,11 @@ update() {
         screen -X -S minerProxy quit
     fi
     rm -rf /root/miner_proxy/minerProxy
-    echo "请选择v4还是v5版本"
-    echo "  1、v4.0.0T9"
-    echo "  2、v5.3.0_amd64(X86架构服务器选择)99.99%的服务器都是X86架构"
-    echo "  3、v5.3.0_arm64(arm架构服务器选择)"
-    read -p "$(echo -e "请输入[1-3]：")" choose
-    case $choose in
-    1)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v4.0.0T9/minerProxy_v4.0.0T9_linux_amd64 -O /root/miner_proxy/minerProxy
-        ;;
-    2)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.3.0/minerProxy_v5.3.0_linux_amd64 -O /root/miner_proxy/minerProxy
-        ;;
-    3)
-        wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v5.3.0/minerProxy_v5.3.0_linux_arm64 -O /root/miner_proxy/minerProxy
-        ;;
-    *)
-        echo "请输入正确的数字"
-        ;;
-    esac
+
+    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.0/minerProxy_v6.0.0_linux_amd64 -O /root/miner_proxy/minerProxy
+
     chmod 777 /root/miner_proxy/minerProxy
 
-#    echo "v3和v4版本配置文件不通用,如果您为v3升级为v4或v4回退至v3,请删除配置文件"
-#    read -p "是否删除配置文件[yes/no]：" flag
-#    if [ -z $flag ]; then
-#        echo "输入错误" && exit 1
-#    else
-#        if [ "$flag" = "yes" -o "$flag" = "ye" -o "$flag" = "y" ]; then
-#            rm -rf /root/miner_proxy/config.yml
-#            echo "删除配置文件成功"
-#        fi
-#    fi
     screen -dmS minerProxy
     sleep 0.2s
     screen -r minerProxy -p 0 -X stuff "cd /root/miner_proxy"
@@ -115,10 +73,11 @@ update() {
     screen -r minerProxy -p 0 -X stuff "./run.sh"
     screen -r minerProxy -p 0 -X stuff $'\n'
 
-    sleep 1s
-    cat /root/miner_proxy/configV6.yml
-    echo "请输入 cat /root/miner_proxy/configV6.yml 查看您的端口号与账号密码"
-    echo "您可运行 screen -r minerProxy 查看程序输出"
+    sleep 3s
+    cat /root/miner_proxy/password.txt
+    echo "请输入 cat /root/miner_proxy/password.txt 账号密码"
+    echo "输入 cat /root/miner_proxy/后台地址.txt 查看后台地址和端口"
+    echo "已启动web后台 您可运行 screen -r minerProxy 查看程序输出"
 }
 
 start() {

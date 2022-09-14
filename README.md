@@ -12,6 +12,7 @@ minerproxyeth/minerproxy 这个人总改名字
 Char1es0rz/minerProxy 把我的名字中的O变成0了
 盗版加料，已经有2个人找我说被抽了100%了
 
+2022-09-14          6.0.0>>>代码重构,支持ETC抽水,增加了自动获取tls证书的功能,运行 minerproxy gettlscert 即可自动申请证书
 2022-04-04 02:18    5.3.0>>>修复数据过多时网页图表刷新不出来的问题,过两天大更新,没啥问题的可以不用更新
 2022-02-25 00:57    5.2.1>>>修复5.1.x系列频繁调用接口导致cpu和内存使用率升高的问题
                             为了保证巨大算力下的性能,目前机器算力和图表都修改为和主流矿池一样每10分钟更新一次,部分数据1分钟更新一次
@@ -120,21 +121,21 @@ mkdir miner_proxy
 cd miner_proxy
 
 # x86服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.3.0/minerProxy_v5.3.0_linux_amd64
-chmod 777 minerProxy_v5.3.0_linux_amd64
-./minerProxy_v5.3.0_linux_amd64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.0/minerProxy_v6.0.0_linux_amd64
+chmod 777 minerProxy_v6.0.0_linux_amd64
+./minerProxy_v6.0.0_linux_amd64
 
 
 # arm服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v5.3.0/minerProxy_v5.3.0_linux_arm64
-chmod 777 minerProxy_v5.3.0_linux_arm64
-./minerProxy_v5.3.0_linux_arm64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.0/minerProxy_v6.0.0_linux_arm64
+chmod 777 minerProxy_v6.0.0_linux_arm64
+./minerProxy_v6.0.0_linux_arm64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy_v5.3.0_linux_amd64 &
+nohup ./minerProxy_v6.0.0_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
