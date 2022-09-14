@@ -12,7 +12,7 @@ minerproxyeth/minerproxy 这个人总改名字
 Char1es0rz/minerProxy 把我的名字中的O变成0了
 盗版加料，已经有2个人找我说被抽了100%了
     
-    
+2022-09-14          6.0.2>>>修复专业矿机发送空数据包导致刷屏的问题
 2022-09-14          6.0.1>>>修复若干bug
 2022-09-14          6.0.0>>>代码重构,支持ETC抽水
                             增加了自动获取tls证书的功能,运行 minerproxy gettlscert 即可自动申请证书
@@ -125,21 +125,21 @@ mkdir miner_proxy
 cd miner_proxy
 
 # x86服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.1/minerProxy_v6.0.1_linux_amd64
-chmod 777 minerProxy_v6.0.1_linux_amd64
-./minerProxy_v6.0.1_linux_amd64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.2/minerProxy_v6.0.2_linux_amd64
+chmod 777 minerProxy_v6.0.2_linux_amd64
+./minerProxy_v6.0.2_linux_amd64
 
 
 # arm服务器
-wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.1/minerProxy_v6.0.1_linux_arm64
-chmod 777 minerProxy_v6.0.1_linux_arm64
-./minerProxy_v6.0.1_linux_arm64
+wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.2/minerProxy_v6.0.2_linux_arm64
+chmod 777 minerProxy_v6.0.2_linux_arm64
+./minerProxy_v6.0.2_linux_arm64
 ```
 
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy_v6.0.1_linux_amd64 &
+nohup ./minerProxy_v6.0.2_linux_amd64 &
 # 运行之后查看webtoken
 tail -f nohup.out
 ```
