@@ -22,7 +22,7 @@ install() {
     $cmd install curl wget screen -y
     mkdir /root/miner_proxy
 
-    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.3/minerProxy_v6.0.3_linux_arm64 -O /root/miner_proxy/minerProxy
+    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.4/minerProxy_v6.0.4_linux_arm64 -O /root/miner_proxy/minerProxy
 
 
     chmod 777 /root/miner_proxy/minerProxy
@@ -63,7 +63,7 @@ update() {
     fi
     rm -rf /root/miner_proxy/minerProxy
 
-    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.3/minerProxy_v6.0.3_linux_amd64 -O /root/miner_proxy/minerProxy
+    wget https://cdn.jsdelivr.net/gh/Char1esOrz/minerProxy@master/release/v6.0.4/minerProxy_v6.0.4_linux_amd64 -O /root/miner_proxy/minerProxy
 
 
     chmod 777 /root/miner_proxy/minerProxy
