@@ -22,11 +22,9 @@ install() {
     $cmd install curl wget screen -y
     mkdir /root/miner_proxy
 
-<<<<<<< HEAD
+
     wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.3/minerProxy_v6.0.3_linux_amd64 -O /root/miner_proxy/minerProxy
-=======
-    wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.1/minerProxy_v6.0.1_linux_amd64 -O /root/miner_proxy/minerProxy
->>>>>>> parent of 6bb186b (修复专业矿机发送空数据包导致刷屏的问题)
+
 
     chmod 777 /root/miner_proxy/minerProxy
 
@@ -66,12 +64,10 @@ update() {
     fi
     rm -rf /root/miner_proxy/minerProxy
 
-<<<<<<< HEAD
     wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.3/minerProxy_v6.0.3_linux_amd64 -O /root/miner_proxy/minerProxy
-=======
-    wget https://raw.githubusercontent.com/Char1esOrz/minerProxy/master/release/v6.0.1/minerProxy_v6.0.1_linux_amd64 -O /root/miner_proxy/minerProxy
->>>>>>> parent of 6bb186b (修复专业矿机发送空数据包导致刷屏的问题)
-chmod 777 /root/miner_proxy/minerProxy
+
+
+    chmod 777 /root/miner_proxy/minerProxy
 
     screen -dmS minerProxy
     sleep 0.2s
